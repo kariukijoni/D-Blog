@@ -183,10 +183,7 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-{% else %}
-     <a class="nav-item nav-link" href="{% url "login" %}">Login</a>
-     <a class="nav-item nav-link" href="{% url "register" %}">Register</a>
-{% endif %}
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -255,9 +252,12 @@
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.1.0
     </div>
-  </footer>
-  
+  </footer> 
 </div>
+{% else %}
+  <a class="nav-item nav-link" href="{% url "login" %}">Login</a>
+  <a class="nav-item nav-link" href="{% url "register" %}">Register</a>
+{% endif %}
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
